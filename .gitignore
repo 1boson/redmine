@@ -3,9 +3,6 @@
 /config/additional_environment.rb
 /config/configuration.yml
 /config/database.yml
-/config/email.yml
-/config/initializers/session_store.rb
-/config/initializers/secret_token.rb
 /coverage
 /db/*.db
 /db/*.sqlite3
@@ -27,12 +24,3 @@
 *.rbc
 
 /.bundle
-/Gemfile.lock
-/Gemfile.local
-le.lock
-Gemfile.local
-public/plugin_assets
-config/initializers/session_store.rb
-config/initializers/secret_token.rb
-config/configuration.yml
-config/email.yml
