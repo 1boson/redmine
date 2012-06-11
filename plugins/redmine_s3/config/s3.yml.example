@@ -1,0 +1,17 @@
+production:
+  access_key_id: 
+  secret_access_key: 
+  bucket: 
+  endpoint:
+  secure:
+  private:
+  expires: 
+
+development:
+  access_key_id: 
+  secret_access_key: 
+  bucket: 
+  endpoint:
+  secure:
+  private:
+  expires: 

@@ -1,0 +1,8 @@
+production:
+  access_key_id: 'AKIAIFRDEVBFVGNNK4XA'
+  secret_access_key: '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'
+  bucket: redmine
+  # endpoint:
+  # secure:
+  # private:
+  # expires: 
