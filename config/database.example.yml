@@ -1,0 +1,8 @@
+common: &common
+  adapter: postgresql
+  username: 
+  password: 
+
+production:
+  <<: *common
+  database: redmine

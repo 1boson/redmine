@@ -1,0 +1,14 @@
+production:
+  pid_file: <%= shared_path %>/searchd.pid
+  searchd_file_path: <%= shared_path %>/sphinx
+  min_infix_len: 3
+  bin_path: "/usr/bin"
+  # OR
+  # min_prefix_len: 3
+  enable_star: true
+  max_matches: 1000
+  indexed_models:
+    - Article
+    - Feed
+    - Event
+    - User
