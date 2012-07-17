@@ -12,6 +12,7 @@ namespace :deploy do
   task :install do
     run "#{sudo} apt-get -y update"
     run "#{sudo} apt-get -y install python-software-properties libxml2 libxml2-dev libxslt1-dev memcached"
-    run "#{sudo} apt-get -y install libmagickwand-dev imagemagick postfix --fix-missing"
+    run "#{sudo} apt-get -y install libmagickwand-dev imagemagick --fix-missing"
+    run "echo '--> Dont forget to install postix!!!'"
   end
 end
