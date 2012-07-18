@@ -27,41 +27,13 @@ set :branch, "master"
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
-# namespace :ts do
-#   task :conf do
-#     thinking_sphinx.configure
-#   end
-#   task :in do
-#     thinking_sphinx.index
-#   end
-#   task :start do
-#     thinking_sphinx.start
-#   end
-#   task :stop do
-#     thinking_sphinx.stop
-#   end
-#   task :restart do
-#     thinking_sphinx.restart
-#   end
-#   task :rebuild do
-#     thinking_sphinx.rebuild
-#   end
-# end
+namespace :redmine do
+  desc "Make symlinks for config"
+  task :symlink do
+    run "ln -nfs #{shared_path}/files #{release_path}/files"
+  end
+end
 
-# namespace :deploy do
-#   desc "Link up Sphinx's indexes."
-#   task :symlink_sphinx_indexes, :roles => [:app] do
-#     run "ln -nfs #{shared_path}/db/sphinx #{release_path}/db/sphinx"
-#   end
-
-#   task :activate_sphinx, :roles => [:app] do
-#     symlink_sphinx_indexes
-#     thinking_sphinx.configure
-#     thinking_sphinx.start
-#   end
-
-#   before 'deploy:update_code', 'thinking_sphinx:stop'
-#   after 'deploy:update_code', 'deploy:activate_sphinx'
-# end
+after "deploy:update_code", "redmine:symlink"
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
