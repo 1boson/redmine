@@ -82,15 +82,15 @@
 # default configuration options for all environments
 default:
   # Outgoing emails configuration (see examples above)
-  # email_delivery:
-  #   delivery_method: :smtp
-  #   smtp_settings:
-  #     address: smtp.sendgrid.net
-  #     port: 587
-  #     domain: 'heroku.com'
-  #     authentication: plain
-  #     user_name: 'app5178877@heroku.com'
-  #     password: 'nfgtsf1d'
+  email_delivery:
+    delivery_method: :smtp
+    # smtp_settings:
+    #   address: smtp.sendgrid.net
+    #   port: 587
+    #   domain: 'heroku.com'
+    #   authentication: plain
+    #   user_name: 'app5178877@heroku.com'
+    #   password: 'nfgtsf1d'
 
   # Absolute path to the directory where attachments are stored.
   # The default is the 'files' directory in your Redmine instance.
@@ -155,16 +155,16 @@ default:
 
 # specific configuration options for production environment
 # that overrides the default ones
-# production:
-#   email_delivery:
-#     delivery_method: :smtp
-#     smtp_settings:
-#       address: smtp.sendgrid.net
-#       port: 587
-#       domain: 'heroku.com'
-#       authentication: plain
-#       user_name: 'app5178877@heroku.com'
-#       password: 'nfgtsf1d'
+production:
+  email_delivery:
+    delivery_method: :smtp
+    # smtp_settings:
+    #   address: smtp.sendgrid.net
+    #   port: 587
+    #   domain: 'heroku.com'
+    #   authentication: plain
+    #   user_name: 'app5178877@heroku.com'
+    #   password: 'nfgtsf1d'
 
 # specific configuration options for development environment
 # that overrides the default ones
