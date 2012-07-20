@@ -24,6 +24,7 @@ RedmineApp::Application.configure do
 
   # Disable delivery errors if you bad email addresses should just be ignored
   config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = { :host => 'rm.1boson.com' }
 
   # No email in production log
   config.action_mailer.logger = nil
