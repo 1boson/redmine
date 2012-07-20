@@ -158,13 +158,11 @@ default:
 production:
   email_delivery:
     delivery_method: :smtp
-    # smtp_settings:
-    #   address: smtp.sendgrid.net
-    #   port: 587
-    #   domain: 'heroku.com'
-    #   authentication: plain
-    #   user_name: 'app5178877@heroku.com'
-    #   password: 'nfgtsf1d'
+    smtp_settings:
+      address: '127.0.0.1'
+      port: 25
+      domain: 'rm.1boson.com'
+      enable_starttls_auto: false
 
 # specific configuration options for development environment
 # that overrides the default ones
