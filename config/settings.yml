@@ -56,7 +56,7 @@ activity_days_default:
 per_page_options:
   default: '25,50,100'
 mail_from:
-  default: redmine@example.net
+  default: notifier@rm.1boson.com
 bcc_recipients:
   default: 1
 plain_text_mail:
@@ -70,7 +70,7 @@ wiki_compression:
 default_language:
   default: en
 host_name:
-  default: localhost:3000
+  default: rm.1boson.com
 protocol:
   default: http
 feeds_limit:
