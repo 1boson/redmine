@@ -36,6 +36,7 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
+    capistrano_colors (0.5.5)
     coderay (1.0.6)
     erubis (2.7.0)
     fastercsv (1.5.5)
@@ -123,6 +124,7 @@ DEPENDENCIES
   activerecord-jdbcsqlite3-adapter
   builder
   capistrano
+  capistrano_colors
   coderay (~> 1.0.6)
   fastercsv (~> 1.5.0)
   i18n (~> 0.6.0)
